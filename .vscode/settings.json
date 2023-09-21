@@ -1,0 +1,10 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "'Cascadia Code'",
+    "editor.wordWrap": "on",
+    "breadcrumbs.enabled": false,
+    "zenMode.hideActivityBar": true,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideTabs": false,
+    "editor.lineNumbers": "relative",
+}
