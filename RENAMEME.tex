@@ -1,0 +1,33 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[letterpaper, margin=1.9cm]{geometry}
+% https://www.mathcha.io/editor
+
+\usepackage{sections/0-preamble}
+
+% \usepackage[moderate]{savetrees}  % Shortens page           https://www.ctan.org/pkg/savetrees?lang=en
+\usepackage{siunitx}           % SI Units
+\usepackage[
+    style=ieee,
+    backend=biber,
+]{biblatex}                     % For citations
+\addbibresource{References.bib} % Biliography file
+
+\usepackage{cleveref}
+
+%%% --------------- Begin document --------------- %%% 
+\begin{document}
+
+%%% --------------- Titlepage --------------- %%% 
+    \title{\Large{\textbf{Title}}}
+    \author{\href{mailto:example@email.com}{YOUR NAME HERE}}
+    \date{}
+\maketitle
+\tableofcontents
+\newpage
+
+\input{sections/1-introduction.tex}
+
+
+
+
+\end{document}
