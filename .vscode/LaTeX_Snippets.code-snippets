@@ -100,7 +100,7 @@
 	}
 	"align equals": {
 		"scope": "latex",
-		"prefix": "=",
+		"prefix": "eq",
 		"body": [
 			"&=",
 		],
@@ -122,4 +122,55 @@
 		],
 		"description": ""
 	}
+	"question": {
+		"scope": "latex",
+		"prefix": "qs",
+		"body": [
+			"\\qs{}{",
+			"$1",
+			"}",
+			"$2",
+		],
+		"description": ""
+	}
+	"proof": {
+		"scope": "latex",
+		"prefix": "prf",
+		"body": [
+			"\\pf{$1}{",
+			"	$2",
+			"}",
+		],
+		"description": ""
+	}
+	"times": {
+		"scope": "latex",
+		"prefix": "times",
+		"body": [
+			"\\cdot",
+		],
+		"description": ""
+	}
+	"E": {
+		"scope": "latex",
+		"prefix": "e1",
+		"body": [
+			"\\cdot 10^{$1}$2",
+		],
+		"description": ""
+	}
+	"diagram": {
+		"scope": "latex",
+		"prefix": "diagram",
+		"body": [
+			"\\begin{figure}[H]"
+				"\\centering"
+				"\\include{$1}"
+				"\\vspace{-1cm}"
+			"\\end{figure}"
+			"$2"
+		],
+		"description": ""
+	}
 }
+

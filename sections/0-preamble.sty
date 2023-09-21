@@ -1,12 +1,11 @@
 % https://www.ctan.org/
 \usepackage[english]{babel}     % manages culturally-determined typographical (and other) rules for a wide range of languages
-\usepackage{amssymb}            % This file defines all the symbols found in the AMS symbol fonts msam and msbm
+\usepackage{amsmath,amsfonts,amsthm,amssymb,mathtools}
 \usepackage{microtype}          % tries to lift the burden of deciding about settings as much as possible from the user. 
 \usepackage{graphicx}           % Graphics
 \usepackage{wrapfig}            %
 % \usepackage{enumitem}           % This package provides user control over the layout of the three basic list environments: enumerate, itemize and description
 % \usepackage{fancyhdr}           % provides extensive facilities, both for constructing headers and footers, and for controlling their use
-\usepackage{amsmath}            % required for math
 % \usepackage{index}              %  indexing macros to provide better support for indexing
 \usepackage{float}              % messing with floats - H
 \usepackage{multicol}           % multicol
@@ -24,7 +23,7 @@
 \definecolor{cgreen}{HTML}{75c16f}
 \definecolor{cred}{HTML}{eb593d}
 \definecolor{cgrey}{HTML}{666666}
-
+\usepackage[most,many,breakable]{tcolorbox}
 \usepackage{blindtext}
 
 % For tilde
@@ -47,7 +46,12 @@
 \pgfplotsset{compat=1.18}
 
 
-\usepackage[
-    colorlinks=true,
-    urlcolor=blue
-]{hyperref}
+\usepackage{hyperref,theoremref}
+\hypersetup{
+	pdftitle={Assignment},
+	colorlinks=true, linkcolor=doc!90,
+	bookmarksnumbered=true,
+	bookmarksopen=true
+}
+\usepackage{pdfpages}
+\usepackage{transparent}
