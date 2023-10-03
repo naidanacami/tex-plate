@@ -1,12 +1,14 @@
 % https://www.ctan.org/
 \usepackage[english]{babel}     % manages culturally-determined typographical (and other) rules for a wide range of languages
 \usepackage{amsmath,amsfonts,amsthm,amssymb,mathtools}
+\usepackage{cancel}
+
 \usepackage{microtype}          % tries to lift the burden of deciding about settings as much as possible from the user. 
 \usepackage{graphicx}           % Graphics
 \usepackage{wrapfig}            %
-% \usepackage{enumitem}           % This package provides user control over the layout of the three basic list environments: enumerate, itemize and description
+\usepackage{enumitem}           % This package provides user control over the layout of the three basic list environments: enumerate, itemize and description
 % \usepackage{fancyhdr}           % provides extensive facilities, both for constructing headers and footers, and for controlling their use
-% \usepackage{index}              %  indexing macros to provide better support for indexing
+\usepackage{index}              %  indexing macros to provide better support for indexing
 \usepackage{float}              % messing with floats - H
 \usepackage{multicol}           % multicol
 \usepackage{pgfplots}           % plot
@@ -19,20 +21,17 @@
 
 \usepackage{csquotes}           % Can't remember
 \usepackage{xcolor}
-\definecolor{cblue}{HTML}{7ba6e6} 
-\definecolor{cgreen}{HTML}{75c16f}
-\definecolor{cred}{HTML}{eb593d}
-\definecolor{cgrey}{HTML}{666666}
 \usepackage[most,many,breakable]{tcolorbox}
 \usepackage{blindtext}
-
+\usepackage{titlesec}
+\usetikzlibrary{patterns}
 % For tilde
 \usepackage{textcomp}
 \newcommand{\textapprox}{\raisebox{0.5ex}{\texttildelow}}
 
 % For multicols
-% \setlength{\columnsep}{1 cm}
-% \newcommand{\squeezeup}{\vspace{-20mm}}
+\setlength{\columnsep}{1 cm}
+\newcommand{\squeezeup}{\vspace{-20mm}}
 
 % Custom caption formatting
 \DeclareCaptionFormat{custom}
@@ -46,12 +45,13 @@
 \pgfplotsset{compat=1.18}
 
 
-\usepackage{hyperref,theoremref}
-\hypersetup{
-	pdftitle={Assignment},
-	colorlinks=true, linkcolor=doc!90,
-	bookmarksnumbered=true,
-	bookmarksopen=true
-}
-\usepackage{pdfpages}
+% \usepackage{hyperref,theoremref}
+\usepackage{theoremref}
+% \hypersetup{
+% 	pdftitle={Assignment},
+	% colorlinks=true, linkcolor=doc!90,
+% 	bookmarksnumbered=true,
+% 	bookmarksopen=true
+% }
+% \usepackage{pdfpages}
 \usepackage{transparent}
